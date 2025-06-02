@@ -23,7 +23,7 @@ def calculator():
             print("Encerrando a calculadora...")
             break
 
-        if opcao not in ['1']
+        if opcao not in ['1','2']:
             print("Opção inválida!")
             continue
 
@@ -38,6 +38,8 @@ def calculator():
             resultado = calculate(num1, num2, opcao)
             print(f"Resultado = {resultado}")
             input("\nPressione Enter para continuar...")
+        finally:
+            print("Operação concluída...")
 
 if __name__ == '__main__':
     calculator()
