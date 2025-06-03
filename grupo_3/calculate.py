@@ -1,4 +1,4 @@
-#calculadora 
+# calculadora
 
 def calculate(num1, num2, operation):
     if not isinstance(num1, (int, float)) or not isinstance(num2, (int, float)):
@@ -7,8 +7,11 @@ def calculate(num1, num2, operation):
     operations = {
         '1': lambda x, y: x + y,  # Adição
         '2': lambda x, y: x - y,  # Subtração
-   }
+        '4': lambda x, y: x / y,  # Divisão
+    }
+
     return operations[operation](num1, num2)
+
 
 def calculator():
     while True:
@@ -16,14 +19,15 @@ def calculator():
         print("Selecione a operação desejada ou 'q' para sair:")
         print("1 - Adição (+)")
         print("2 - Subtração (-)")
-
-        opcao = input("Digite sua opção (1/2) ou 'q' para sair: ").strip().lower()
+        print("4 - Divisão (/)")
+        
+        opcao = input("Digite sua opção (1/2/4) ou 'q' para sair: ").strip().lower()
 
         if opcao == 'q':
             print("Encerrando a calculadora...")
             break
 
-        if opcao not in ['1','2']:
+        if opcao not in ['1', '2', '4']:
             print("Opção inválida!")
             continue
 
@@ -34,10 +38,19 @@ def calculator():
             print("Erro: entrada inválida, digite números válidos.")
             continue
 
+        # Verificação adicional para divisão
+        if opcao == '4' and num2 <= 0:
+            print("Erro: para divisão, o segundo número deve ser maior que zero.")
+            continue
+
         try:
             resultado = calculate(num1, num2, opcao)
             print(f"Resultado = {resultado}")
             input("\nPressione Enter para continuar...")
+
+        except ZeroDivisionError:
+            print("Erro: divisão por zero!!")
+
         finally:
             print("Operação concluída...")
 
