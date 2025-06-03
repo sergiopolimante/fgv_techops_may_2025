@@ -40,7 +40,7 @@ def calculator():
             print(f"Resultado = {resultado}")
             input("\nPressione Enter para continuar...")
         finally:
-            print("Operação concluída no teste...")
+            print("Operação concluída...")
 
 if __name__ == '__main__':
     calculator()
