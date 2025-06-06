@@ -16,9 +16,19 @@ def multiplicacao(a, b):
     """
     return a * b
 
-def divisao(a, b):
+def divisao(a: float, b: float) -> float:
     """
     Retorna a divisão entre dois números. Lança erro se b for zero.
+    
+    Args:
+        a: Numerador
+        b: Denominador (não pode ser zero)
+    
+    Raises:
+        ValueError: Se o denominador for zero
+    
+    Returns:
+        Resultado da divisão a/b
     """
     if b == 0:
         raise ValueError("Divisão por zero não é permitida.")
