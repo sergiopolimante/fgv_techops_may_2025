@@ -26,7 +26,7 @@ ou
 ```
 py -m unittest test_calculadora.py
 ```
-### Integrantes do grupo 5
+### Integrantes do grupo
 
 Alexandre Augusto Lima  
 Bruna Texeira  
