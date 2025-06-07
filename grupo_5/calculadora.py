@@ -12,9 +12,29 @@ def subtracao(a, b):
 
 def multiplicacao(a, b):
     """
-    Retorna a multiplicação entre dois números.
+    Realiza a multiplicacao de dois valores numericos com validacao de entrada,
+    suporte a strings numericas e log da operacao.
+
+    Args:
+        a (int, float, str): Primeiro fator da multiplicacao.
+        b (int, float, str): Segundo fator da multiplicacao.
+
+    Returns:
+        float: Resultado da multiplicacao.
+
+    Raises:
+        ValueError: Se os valores nao forem numericos ou nao puderem ser convertidos.
     """
-    return a * b
+    try:
+        num1 = float(a)
+        num2 = float(b)
+        resultado = num1 * num2
+        print(f"[INFO] Multiplicando {num1} * {num2} = {resultado}")
+        return resultado
+    except ValueError:
+        raise ValueError(f"Entradas invalidas: '{a}' e '{b}' devem ser numeros ou strings numericas.")
+    except TypeError:
+        raise TypeError(f"Tipos invalidos fornecidos: tipo(a)={type(a)}, tipo(b)={type(b)}")
 
 def divisao(a, b):
     """
