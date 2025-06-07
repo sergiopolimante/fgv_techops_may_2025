@@ -32,4 +32,4 @@ Alexandre Augusto Lima
 Bruna Texeira  
 Danilo Reis  
 Renato Azevedo  
-Victor Lima
+Vitor Lima
