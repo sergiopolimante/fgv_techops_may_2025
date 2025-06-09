@@ -37,6 +37,26 @@ class Calculadora:
         """
         self.history = []
 
+    def add(self, a, b):
+        """
+        Realiza a adição de dois números.
+        
+        Args:
+            a (float): Primeiro número.
+            b (float): Segundo número.
+            
+        Returns:
+            float: Resultado da adição de a + b.
+            
+        Raises:
+            TypeError: Se a ou b não forem números.
+            
+        Example:
+            >>> calc = Calculator()
+            >>> calc.add(5, 3)
+            8
+        """
+        self._validate_numbers(a, b)
 
 def main():
     """
