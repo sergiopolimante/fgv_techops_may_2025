@@ -58,6 +58,23 @@ class Calculadora:
         """
         self._validate_numbers(a, b)
 
+    def subtract(self, a, b):
+        """
+        Realiza a subtração de dois números.
+        
+        Args:
+            a (float): Número do qual se subtrai (minuendo).
+            b (float): Número a ser subtraído (subtraendo).
+            
+        Returns:
+            float: Resultado da subtração de a - b.
+            
+        Raises:
+            TypeError: Se a ou b não forem números.
+            
+        Example:
+            >>> calc = Calculator()
+            >>> calc.subtract(10, 4)
 def main():
     """
     Função principal que executa a calculadora no modo interativo.
