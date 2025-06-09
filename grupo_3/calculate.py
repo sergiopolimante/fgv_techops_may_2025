@@ -7,6 +7,7 @@ def calculate(num1, num2, operation):
     operations = {
         '1': lambda x, y: x + y,  # Adição
         '2': lambda x, y: x - y,  # Subtração
+		'3': lambda x, y: x * y,  # Multiplicação
         '4': lambda x, y: x / y,  # Divisão
     }
 
@@ -19,15 +20,17 @@ def calculator():
         print("Selecione a operação desejada ou 'q' para sair:")
         print("1 - Adição (+)")
         print("2 - Subtração (-)")
+        print("3 - Multiplicação (*)")
         print("4 - Divisão (/)")
-        
-        opcao = input("Digite sua opção (1/2/4) ou 'q' para sair: ").strip().lower()
+
+		
+        opcao = input("Digite sua opção (1/2/3/4) ou 'q' para sair: ").strip().lower()
 
         if opcao == 'q':
             print("Encerrando a calculadora...")
             break
 
-        if opcao not in ['1', '2', '4']:
+        if opcao not in ['1', '2', '3', '4']:
             print("Opção inválida!")
             continue
 
