@@ -108,6 +108,34 @@ class Calculadora:
         result = a * b
         self._add_to_history(f"{a} * {b} = {result}")
         return result
+
+    def divide(self, a, b):
+        """
+        Realiza a divisão de dois números.
+        
+        Args:
+            a (float): Dividendo.
+            b (float): Divisor.
+            
+        Returns:
+            float: Resultado da divisão de a / b.
+            
+        Raises:
+            TypeError: Se a ou b não forem números.
+            ValueError: Se b for zero.
+            
+        Example:
+            >>> calc = Calculator()
+            >>> calc.divide(20, 4)
+            5.0
+        """
+        self._validate_numbers(a, b)
+        if b == 0:
+            raise ValueError("Divisão por zero não é permitida")
+        result = a / b
+        self._add_to_history(f"{a} / {b} = {result}")
+        return result
+
 def main():
     """
     Função principal que executa a calculadora no modo interativo.
