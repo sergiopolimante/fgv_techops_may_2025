@@ -84,7 +84,30 @@ class Calculadora:
         result = a - b
         self._add_to_history(f"{a} - {b} = {result}")
         return result
-
+        
+        def multiply(self, a, b):
+            """
+            Realiza a multiplicação de dois números.
+            
+            Args:
+                a (float): Primeiro fator.
+                b (float): Segundo fator.
+                
+            Returns:
+                float: Resultado da multiplicação de a * b.
+                
+            Raises:
+                TypeError: Se a ou b não forem números.
+                
+            Example:
+                >>> calc = Calculator()
+                >>> calc.multiply(4, 7)
+                28
+            """
+        self._validate_numbers(a, b)
+        result = a * b
+        self._add_to_history(f"{a} * {b} = {result}")
+        return result
 def main():
     """
     Função principal que executa a calculadora no modo interativo.
