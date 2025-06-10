@@ -284,7 +284,7 @@ class TestMain(unittest.TestCase):
             self.assertIn("Encerrando calculadora", output)
 
     @patch('builtins.input', side_effect=['1', '5', '3', '7'])
-    @patch('calculator.Calculadora.add')
+    @patch('calculadora.Calculadora.add')
     def test_main_type_error_in_operation(self, mock_add, mock_input):
         """Testa TypeError durante operação matemática."""
         # Simula um TypeError quando add é chamado
@@ -296,7 +296,7 @@ class TestMain(unittest.TestCase):
             self.assertIn("Erro: Tipo inválido", output)
 
     @patch('builtins.input', side_effect=['2', '10', '4', '7'])
-    @patch('calculator.Calculadora.subtract')
+    @patch('calculadora.Calculadora.subtract')
     def test_main_type_error_in_subtract(self, mock_subtract, mock_input):
         """Testa TypeError durante subtração."""
         # Simula um TypeError quando subtract é chamado
@@ -307,13 +307,13 @@ class TestMain(unittest.TestCase):
             output = mock_stdout.getvalue()
             self.assertIn("Erro: Os argumentos devem ser números", output)
 
-    @patch('builtins.input', side_effect=Exception("Erro inesperado simulado"))
+    @patch('builtins.input', side_effect=[Exception("Erro inesperado simulado"), '7'])
     def test_main_unexpected_exception(self, mock_input):
-        """Testa exceção inesperada durante execução."""
         with patch('sys.stdout', new_callable=io.StringIO) as mock_stdout:
             main()
             output = mock_stdout.getvalue()
             self.assertIn("Erro inesperado: Erro inesperado simulado", output)
+            self.assertIn("Encerrando calculadora", output)
 
     @patch('builtins.input')
     def test_main_generic_exception_in_loop(self, mock_input):

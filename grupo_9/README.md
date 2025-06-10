@@ -7,14 +7,12 @@ Este projeto implementa uma calculadora de linha de comando em Python, trazendo 
 
 **Descrição dos arquivos:**
 
-- `calculator.py`  
-  Implementa a classe Calculator, contendo os métodos das operações matemáticas e gerenciamento do histórico.
-
-- `main.py`  
+- `calculadora.py`  
+  Implementa a classe Calculadora, contendo os métodos das operações matemáticas e gerenciamento do histórico.
   Interface de linha de comando que interage com o usuário, instanciando a calculadora e processando as operações.
 
-- `test_calculator.py`  
-  Testes unitários completos, garantindo 100% de cobertura incluindo tratamento de erros e interface.
+- `test_calculadora.py`  
+  Testes unitários completos, garantindo aproximadamente 100% de cobertura incluindo tratamento de erros e interface.
 
 - `requirements.txt`  
   Lista de dependências para rodar os testes e gerar o relatório de cobertura de código.
@@ -31,6 +29,7 @@ Este projeto implementa uma calculadora de linha de comando em Python, trazendo 
     ```bash
     git clone <URL_DO_REPOSITORIO>
     cd <PASTA_DO_PROJETO>
+    cd grupo_9
     ```
 
 2. **(Opcional) Crie e ative um ambiente virtual:**
@@ -43,7 +42,7 @@ Este projeto implementa uma calculadora de linha de comando em Python, trazendo 
     venv\Scripts\activate
     ```
 
-3. **(Opcional) Instale as dependências para testes/cobertura:**
+3. **Instale as dependências para testes/cobertura:**
 
     ```bash
     pip install -r requirements.txt
@@ -90,7 +89,7 @@ O menu será exibido no terminal. Escolha a operação, visualize o histórico, 
 - Limpeza do histórico
 - Tratamento de erros: entrada inválida, divisão por zero, erro de tipo, interrupção do usuário
 - Interface no terminal
-- 100% de cobertura nos testes unitários
+- 98% de cobertura nos testes unitários
 
 ---
 
