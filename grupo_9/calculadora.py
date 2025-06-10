@@ -52,7 +52,7 @@ class Calculadora:
             TypeError: Se a ou b não forem números.
             
         Example:
-            >>> calc = Calculator()
+            >>> calc = Calculadora()
             >>> calc.add(5, 3)
             8
         """
@@ -61,53 +61,53 @@ class Calculadora:
         self._add_to_history(f"{a} + {b} = {result}")
         return result
 
-        def subtract(self, a, b):
-            """
-            Realiza a subtração de dois números.
+    def subtract(self, a, b):
+        """
+        Realiza a subtração de dois números.
 
-            Args:
-                a (float): Número do qual se subtrai (minuendo).
-                b (float): Número a ser subtraído (subtraendo).
+        Args:
+            a (float): Número do qual se subtrai (minuendo).
+            b (float): Número a ser subtraído (subtraendo).
 
-            Returns:
-                float: Resultado da subtração de a - b.
+        Returns:
+            float: Resultado da subtração de a - b.
 
-            Raises:
-                TypeError: Se a ou b não forem números.
+        Raises:
+            TypeError: Se a ou b não forem números.
 
-            Example:
-                >>> calc = Calculator()
-                >>> calc.subtract(10, 4)
-                6
-            """
+        Example:
+            >>> calc = Calculadora()
+            >>> calc.subtract(10, 4)
+            6
+        """
         self._validate_numbers(a, b)
         result = a - b
         self._add_to_history(f"{a} - {b} = {result}")
         return result
         
-        def multiply(self, a, b):
-            """
-            Realiza a multiplicação de dois números.
-            
-            Args:
-                a (float): Primeiro fator.
-                b (float): Segundo fator.
-                
-            Returns:
-                float: Resultado da multiplicação de a * b.
-                
-            Raises:
-                TypeError: Se a ou b não forem números.
-                
-            Example:
-                >>> calc = Calculator()
-                >>> calc.multiply(4, 7)
-                28
-            """
+    def multiply(self, a, b):
+        """
+        Realiza a multiplicação de dois números.
+
+        Args:
+            a (float): Primeiro fator.
+            b (float): Segundo fator.
+
+        Returns:
+            float: Resultado da multiplicação de a * b.
+
+        Raises:
+            TypeError: Se a ou b não forem números.
+
+        Example:
+            >>> calc = Calculadora()
+            >>> calc.multiply(4, 7)
+            28
+        """
         self._validate_numbers(a, b)
         result = a * b
         self._add_to_history(f"{a} * {b} = {result}")
-        return result
+        return result
 
     def divide(self, a, b):
         """
@@ -125,7 +125,7 @@ class Calculadora:
             ValueError: Se b for zero.
             
         Example:
-            >>> calc = Calculator()
+            >>> calc = Calculadora()
             >>> calc.divide(20, 4)
             5.0
         """
@@ -135,6 +135,51 @@ class Calculadora:
         result = a / b
         self._add_to_history(f"{a} / {b} = {result}")
         return result
+
+    def _validate_numbers(self, a, b):
+        """
+        Valida se os argumentos são números.
+
+        Args:
+            a: Primeiro valor a ser validado.
+            b: Segundo valor a ser validado.
+
+        Raises:
+            TypeError: Se a ou b não forem números (int ou float) ou forem booleanos.
+        """
+        # Verifica se são booleanos primeiro (bool é subclasse de int)
+        if isinstance(a, bool) or isinstance(b, bool):
+            raise TypeError("Os argumentos devem ser números")
+
+        # Depois verifica se são números
+        if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+            raise TypeError("Os argumentos devem ser números")
+
+    def _add_to_history(self, operation):
+        """
+        Adiciona uma operação ao histórico.
+
+        Args:
+            operation (str): String representando a operação realizada.
+        """
+        self.history.append(operation)
+
+    def clear_history(self):
+        """
+        Limpa o histórico de operações.
+
+        Remove todas as operações armazenadas no histórico.
+        """
+        self.history = []
+
+    def get_history(self):
+        """
+        Retorna o histórico de operações.
+
+        Returns:
+            list: Lista contendo todas as operações realizadas.
+        """
+        return self.history.copy()
 
 def main():
     """
