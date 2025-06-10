@@ -7,8 +7,7 @@ Uso:
     2. `calculator()`: inicializa a interface de linha de comando para interação direta.
 
 Exemplo:
-    from calculate import calculate
-    
+    from calculate import calculate    
     resultado = calculate(10, 2, '1')
     print(resultado)  # 12
 """
