@@ -2,6 +2,13 @@
 
 Este projeto consiste em uma calculadora de linha de comando que realiza operações básicas: adição, subtração, multiplicação e divisão.
 
+Trabalho em Grupo do MBA FGV - Transformação Digital
+Grupo: Diogo Porto
+       Cesar Feitosa
+       Nilson Gomes
+       Moises Costa
+       Raphael Bruce
+
 ## Requisitos
 
 - Python 3.8 ou superior
