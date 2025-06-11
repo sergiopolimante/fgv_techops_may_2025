@@ -9,7 +9,7 @@ Este projeto consiste em uma calculadora de linha de comando que realiza operaç
 ## Estrutura do Projeto
 
 - **calculate.py**: contém a lógica principal da calculadora (função *calculate* e função *calculator*).
-- **test_calculate.py**: arquivo de testes unitários que valida as operações básicas da calculadora.
+- **calculte_test.py**: arquivo de testes unitários que valida as operações básicas da calculadora.
 
 ## Uso
 
@@ -27,7 +27,7 @@ python calculate.py
 Para rodar os testes, execute:
 
 ```bash
-python -m unittest test_calculate.py
+python -m unittest calculte_test.py
 ```
 
 ## Contribuição
