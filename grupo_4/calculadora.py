@@ -3,5 +3,5 @@ def soma(a, b):
     return a + b
 
 def subtracao(a, b):
-    """Retorna a soma de dois números."""
+    """Retorna a subtração de dois números."""
     return a - b
