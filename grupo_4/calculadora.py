@@ -17,7 +17,17 @@ def divisao(a, b):
     else:
         return a / b
         
-""" Código de captura das operações e operadores """
+def main():
+    print("Calculadora Python")
+    print("Operações disponíveis: +  -  *  /")
+    print("Digite 'q' para sair.\n")
+
+    while True:
+        operacao = input("Digite a operação (+, -, *, /) ou 'q' para sair: ").strip()
+        if operacao.lower() == "q":
+            print("Encerrando a calculadora. Até logo!")
+            break
+
 
         if operacao not in ["+", "-", "*", "/"]:
             print("Operação inválida. Tente novamente.\n")
@@ -29,3 +39,21 @@ def divisao(a, b):
         except ValueError:
             print("Erro: insira apenas números válidos.\n")
             continue
+
+    if operacao == "+":
+            resultado = soma(a,b)
+        elif operacao == "-":
+            resultado = subtracao(a,b)
+        elif operacao == "*":
+            resultado = multiplicacao(a,b)
+        elif operacao == "/":
+            resultado = divisao(a,b)
+        else:
+            resultado = "Operação inválida."
+
+        print(f"Resultado: {resultado}\n")
+
+if __name__ == "__main__":
+    main()
+
+
