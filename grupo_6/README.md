@@ -1,12 +1,12 @@
 # Calculadora em Python
 
 ## Integrantes
-
-- LUIZ GUSTAVO MARINHO DE ALMEIDA - A58495398
-- LEONARDO BAUMEISTER DA SILVA - A58496079
-- ALEX DA SILVA - A58497210
-- KAIO ALBERTO AIRES SOUSA - A58501055
-- GEOVANA VEDAN - A58511481
+- **Nome - Matricula - Usuários GitHub**
+- LUIZ GUSTAVO MARINHO DE ALMEIDA - A58495398 - LuizGustavoMarinhoDeAlmeida e Nareez
+- LEONARDO BAUMEISTER DA SILVA - A58496079 - leonardobaumeister
+- ALEX DA SILVA - A58497210 - Matrix0147
+- KAIO ALBERTO AIRES SOUSA - A58501055 - kaioalberto e suporteplanejati
+- GEOVANA VEDAN - A58511481 - GeovanaVedan
 
 ## Objetivo
 
