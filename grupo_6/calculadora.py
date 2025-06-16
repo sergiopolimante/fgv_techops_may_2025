@@ -1,3 +1,15 @@
+def adicao(a: float, b: float) -> float:
+    """
+    Realiza a adição de dois números.
+    Alteração efetuada por Alex da Silva
+    Args:
+        a (float): Primeiro operando.
+        b (float): Segundo operando.
+
+    Returns:
+        float: Resultado da soma de a e b.
+    """
+    return a + b
 def divisao(a: float, b: float) -> float:
     """
     Realiza a divisão de dois números.
@@ -18,4 +30,5 @@ def divisao(a: float, b: float) -> float:
     return a / b
 
 if __name__ == "__main__":
+    print("5 + 2 =", adicao(5, 2))
     print("5 / 2 = ", divisao(5, 2))
