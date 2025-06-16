@@ -28,9 +28,15 @@ Acompanhada de **testes unitários** que garantem a correção e robustez de cad
   Retorna o quociente de `a` por `b`.  
   Lança `ZeroDivisionError` se `b` for zero.
 
-## Instalação
+## Estrutura do Projeto
 
-1. Clone este repositório:
+- **calculadora.py**: Contém a implementação da calculadora.
+- **test_calculadora.py**: Contém os testes unitários da calculadora.
+
+## Uso
+
    ```bash
    git clone https://github.com/LuizGustavoMarinhoDeAlmeida/fgv_techops_may_2025.git
    cd calculadora
+   python calculadora.py
+   python test_calculadora.py
