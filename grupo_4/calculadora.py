@@ -16,3 +16,16 @@ def divisao(a, b):
         return "Erro: divisão por zero não é permitida."
     else:
         return a / b
+        
+""" Código de captura das operações e operadores """
+
+        if operacao not in ["+", "-", "*", "/"]:
+            print("Operação inválida. Tente novamente.\n")
+            continue
+
+        try:
+            a = float(input("Digite o primeiro número: "))
+            b = float(input("Digite o segundo número: "))
+        except ValueError:
+            print("Erro: insira apenas números válidos.\n")
+            continue
