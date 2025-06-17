@@ -5,11 +5,11 @@ Este projeto implementa uma calculadora simples em Python com operações básic
 ## Equipe
 *Este projeto foi desenvolvido por:*
 
-Alexandre Moreno
-Cassio Araujo
-Diogue Guedes
-Fabricio Quiles
-Rodrigo Sampaio
+Alexandre Moreno  
+Cassio Araujo   
+Diogue Guedes  
+Fabricio Quiles  
+Rodrigo Sampaio  
 
 *Contribuições*
 
