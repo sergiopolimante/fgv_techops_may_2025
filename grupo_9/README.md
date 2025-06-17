@@ -1,4 +1,12 @@
-# FGV - Techops - Grupo 3
+# FGV - Techops - Grupo 9
+
+## Integrante
+- Alex Medeiros
+- Maiara Aguiar
+- Eron Brunelli
+- Antônio Cruz
+- Luciana Bertochi
+
 ## Calculadora Básica em Python
 
 Este projeto implementa uma calculadora de linha de comando em Python, trazendo as operações matemáticas básicas (adição, subtração, multiplicação e divisão), histórico de operações, tratamento robusto de erros e testes unitários com 100% de cobertura.
