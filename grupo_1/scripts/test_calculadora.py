@@ -6,13 +6,14 @@
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
 \f0\fs24 \cf0 import unittest\
-from calculadora import soma\
+from calculadora import soma, subtracao\
 \
 class TestCalculadora(unittest.TestCase):\
     """\
     Classe de testes para a calculadora\
     """\
     \
+    # Testes para soma (mantidos do exemplo anterior)\
     def test_soma_inteiros(self):\
         """Testa soma de dois n\'fameros inteiros positivos"""\
         self.assertEqual(soma(5, 3), 8)\
@@ -31,6 +32,29 @@ class TestCalculadora(unittest.TestCase):\
         self.assertEqual(soma(0, 5), 5)\
         self.assertEqual(soma(5, 0), 5)\
         self.assertEqual(soma(0, 0), 0)\
+\
+    # Novos testes para subtra\'e7\'e3o\
+    def test_subtracao_inteiros(self):\
+        """Testa subtra\'e7\'e3o de dois n\'fameros inteiros positivos"""\
+        self.assertEqual(subtracao(5, 3), 2)\
+        self.assertEqual(subtracao(10, 5), 5)\
+        \
+    def test_subtracao_negativos(self):\
+        """Testa subtra\'e7\'e3o com n\'fameros negativos"""\
+        self.assertEqual(subtracao(-1, -1), 0)\
+        self.assertEqual(subtracao(-1, 1), -2)\
+        self.assertEqual(subtracao(1, -1), 2)\
+        \
+    def test_subtracao_floats(self):\
+        """Testa subtra\'e7\'e3o com n\'fameros decimais"""\
+        self.assertAlmostEqual(subtracao(10.5, 3.2), 7.3)\
+        self.assertAlmostEqual(subtracao(5.5, 2.1), 3.4)\
+        \
+    def test_subtracao_zero(self):\
+        """Testa subtra\'e7\'e3o com zero"""\
+        self.assertEqual(subtracao(5, 0), 5)\
+        self.assertEqual(subtracao(0, 5), -5)\
+        self.assertEqual(subtracao(0, 0), 0)\
 \
 if _name_ == '_main_':\
     unittest.main()}

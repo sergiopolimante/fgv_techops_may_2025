@@ -31,8 +31,35 @@ def soma(a, b):\
     """\
     return a + b\
 \
+def subtracao(a, b):\
+    """\
+    Realiza a subtra\'e7\'e3o de dois n\'fameros.\
+\
+    Args:\
+        a (int/float): O minuendo (n\'famero do qual se subtrai)\
+        b (int/float): O subtraendo (n\'famero a ser subtra\'eddo)\
+\
+    Returns:\
+        int/float: O resultado da subtra\'e7\'e3o de a - b\
+\
+    Examples:\
+        >>> subtracao(5, 3)\
+        2\
+        >>> subtracao(-1, 1)\
+        -2\
+        >>> subtracao(10.5, 3.2)\
+        7.3\
+    \
+    Raises:\
+        TypeError: Se os argumentos n\'e3o forem n\'fameros\
+    """\
+    return a - b\
+\
 # Exemplo de uso da fun\'e7\'e3o\
 if _name_ == "_main_":\
     # Testando a fun\'e7\'e3o\
     resultado = soma(5, 3)\
-    print(f"A soma de 5 e 3 \'e9: \{resultado\}")}
+    print(f"A soma de 5 e 3 \'e9: \{resultado\}")\
+\
+    resultado_subtracao = subtracao(10, 4)\
+    print(f"A subtra\'e7\'e3o de 10 e 4 \'e9: \{resultado_subtracao\}")}
