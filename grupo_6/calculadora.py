@@ -1,3 +1,16 @@
+def multiplicacao(a: float, b: float) -> float:
+    """
+    Realiza a multiplicação de dois números.
+
+    Args:
+        a (float): Primeiro fator.
+        b (float): Segundo fator.
+
+    Returns:
+        float: Produto de a e b.
+    """
+    return a * b
+    
 def subtracao(a: float, b: float) -> float:
     """
     Realiza a subtração de dois números.
