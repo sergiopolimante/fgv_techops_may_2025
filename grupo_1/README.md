@@ -2,6 +2,17 @@
 
 Este projeto implementa uma calculadora simples em Python com operações básicas de aritmética.
 
+Equipe
+Este projeto foi desenvolvido por:
+
+Alexandre Moreno
+Cassio Araujo
+Diogue Guedes
+Fabricio Quiles
+Rodrigo Sampaio
+Contribuições
+Contribuições são bem-vindas! Por favor, sinta-se à vontade para submeter um Pull Request.
+
 ## Funcionalidades
 
 A calculadora inclui as seguintes operações:
@@ -33,13 +44,3 @@ print(subtracao(10, 4))  # Saída: 6
 print(multiplicacao(2, 6))  # Saída: 12
 print(divisao(15, 3))    # Saída: 5.0
 
-Equipe
-Este projeto foi desenvolvido por:
-
-Alexandre Moreno
-Cassio Araujo
-Diogue Guedes
-Fabricio Quiles
-Rodrigo Sampaio
-Contribuições
-Contribuições são bem-vindas! Por favor, sinta-se à vontade para submeter um Pull Request.
