@@ -37,6 +37,7 @@ def adicao(a: float, b: float) -> float:
         float: Resultado da soma de a e b.
     """
     return a + b
+
 def divisao(a: float, b: float) -> float:
     """
     Realiza a divisão de dois números.
@@ -60,3 +61,4 @@ if __name__ == "__main__":
     print("5 + 2 =", adicao(5, 2))
     print("5 / 2 = ", divisao(5, 2))
     print("5 - 2 =", subtracao(5, 2))
+    print("5 * 2 =", multiplicacao(5, 2))
