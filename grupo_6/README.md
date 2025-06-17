@@ -39,4 +39,7 @@ Acompanhada de **testes unitários** que garantem a correção e robustez de cad
    git clone https://github.com/LuizGustavoMarinhoDeAlmeida/fgv_techops_may_2025.git
    cd calculadora
    python calculadora.py
-   python test_calculadora.py
+
+
+## Testes
+python test_calculadora.py
