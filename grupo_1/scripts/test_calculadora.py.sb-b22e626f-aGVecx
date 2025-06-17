@@ -51,7 +51,7 @@ class TestCalculadora(unittest.TestCase):\
         self.assertAlmostEqual(subtracao(5.5, 2.1), 3.4)\
         \
     def test_subtracao_zero(self):\
-        """Testa subtra\'e7\'e3o com zero para evitar erro\'93\'94\'94\
+        """Testa subtra\'e7\'e3o com zero"""\
         self.assertEqual(subtracao(5, 0), 5)\
         self.assertEqual(subtracao(0, 5), -5)\
         self.assertEqual(subtracao(0, 0), 0)\
