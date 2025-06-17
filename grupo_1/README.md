@@ -2,15 +2,17 @@
 
 Este projeto implementa uma calculadora simples em Python com operações básicas de aritmética.
 
-Equipe
-Este projeto foi desenvolvido por:
+## Equipe
+*Este projeto foi desenvolvido por:*
 
 Alexandre Moreno
 Cassio Araujo
 Diogue Guedes
 Fabricio Quiles
 Rodrigo Sampaio
-Contribuições
+
+*Contribuições*
+
 Contribuições são bem-vindas! Por favor, sinta-se à vontade para submeter um Pull Request.
 
 ## Funcionalidades
@@ -43,4 +45,15 @@ print(soma(5, 3))        # Saída: 8
 print(subtracao(10, 4))  # Saída: 6
 print(multiplicacao(2, 6))  # Saída: 12
 print(divisao(15, 3))    # Saída: 5.0
+```
+
+## Testes
+
+O projeto inclui testes unitários implementados usando o framework unittest do Python. Os testes estão no arquivo test_calculadora.py.
+
+Para executar os testes, use o comando:
+
+    
+python -m unittest test_calculadora.py
+
 
