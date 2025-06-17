@@ -9,11 +9,25 @@
 \
 def soma(a, b):\
     """\
-    Retorna a soma de dois n\'fameros.\
+    Realiza a soma de dois n\'fameros.\
+\
+    Args:\
+        a (int/float): Primeiro n\'famero da opera\'e7\'e3o\
+        b (int/float): Segundo n\'famero da opera\'e7\'e3o\
+\
+    Returns:\
+        int/float: O resultado da soma de a + b\
+\
+    Examples:\
+        >>> soma(5, 3)\
+        8\
+        >>> soma(-1, 1)\
+        0\
+        >>> soma(2.5, 3.7)\
+        6.2\
     \
-    :param a: primeiro n\'famero\
-    :param b: segundo n\'famero\
-    :return: a soma de a e b\
+    Raises:\
+        TypeError: Se os argumentos n\'e3o forem n\'fameros\
     """\
     return a + b\
 \
