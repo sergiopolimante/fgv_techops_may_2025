@@ -1,117 +1,152 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2822
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+# calculadora.py
 
-\f0\fs24 \cf0 # calculadora.py\
-\
-def soma(a, b):\
-    """\
-    Realiza a soma de dois n\'fameros.\
-\
-    Args:\
-        a (int/float): Primeiro n\'famero da opera\'e7\'e3o\
-        b (int/float): Segundo n\'famero da opera\'e7\'e3o\
-\
-    Returns:\
-        int/float: O resultado da soma de a + b\
-\
-    Examples:\
-        >>> soma(5, 3)\
-        8\
-        >>> soma(-1, 1)\
-        0\
-        >>> soma(2.5, 3.7)\
-        6.2\
-    \
-    Raises:\
-        TypeError: Se os argumentos n\'e3o forem n\'fameros\
-    """\
-    return a + b\
-\
-def subtracao(a, b):\
-    """\
-    Realiza a subtra\'e7\'e3o de dois n\'fameros.\
-\
-    Args:\
-        a (int/float): O minuendo (n\'famero do qual se subtrai)\
-        b (int/float): O subtraendo (n\'famero a ser subtra\'eddo)\
-\
-    Returns:\
-        int/float: O resultado da subtra\'e7\'e3o de a - b\
-\
-    Examples:\
-        >>> subtracao(5, 3)\
-        2\
-        >>> subtracao(-1, 1)\
-        -2\
-        >>> subtracao(10.5, 3.2)\
-        7.3\
-    \
-    Raises:\
-        TypeError: Se os argumentos n\'e3o forem n\'fameros\
-    """\
-    return a - b\
-\
-# Exemplo de uso da fun\'e7\'e3o\
-if _name_ == "_main_":\
-    # Testando a fun\'e7\'e3o\
-    resultado = soma(5, 3)\
-    print(f"A soma de 5 e 3 \'e9: \{resultado\}")\
-\
-    resultado_subtracao = subtracao(10, 4)\
-    print(f"A subtra\'e7\'e3o de 10 e 4 \'e9: \{resultado_subtracao\}")\
-\
-#Comentario de teste\
-\
-def multiplicar(num1, num2):\
-  """\
-  Esta fun\'e7\'e3o recebe dois n\'fameros e retorna o produto da multiplica\'e7\'e3o.\
-\
-  Args:\
-    num1: O primeiro n\'famero (inteiro ou float).\
-    num2: O segundo n\'famero (inteiro ou float).\
-\
-  Returns:\
-    O produto da multiplica\'e7\'e3o de num1 por num2.\
-  """\
-  return num1 * num2\
-\
-# Exemplos de uso:\
-if __name__ == "__main__":\
-  # Multiplica\'e7\'e3o de inteiros\
-  resultado1 = multiplicar(5, 7)\
-  print(f"5 * 7 = \{resultado1\}") # Sa\'edda: 5 * 7 = 35\
-\
-  # Multiplica\'e7\'e3o de floats\
-  resultado2 = multiplicar(3.5, 2.0)\
-  print(f"3.5 * 2.0 = \{resultado2\}") # Sa\'edda: 3.5 * 2.0 = 7.0\
-\
-  # Multiplica\'e7\'e3o com n\'fameros negativos\
-  resultado3 = multiplicar(-4, 6)\
-  print(f"-4 * 6 = \{resultado3\}") # Sa\'edda: -4 * 6 = -24\
-\
-  # Multiplica\'e7\'e3o com zero\
-  resultado4 = multiplicar(10, 0)\
-  print(f"10 * 0 = \{resultado4\}") # Sa\'edda: 10 * 0 = 0}
-  
-  #inserção do código divisão:\
-  def divisao(num1, num2):
+def soma(a, b):
     """
-    Realiza a divisão de dois números.
+    Realiza a soma de dois números.
 
     Args:
-        num1 (float ou int): O numerador.
-        num2 (float ou int): O denominador.
+        a (int/float): Primeiro número da operação
+        b (int/float): Segundo número da operação
 
     Returns:
-        float: O resultado da divisão.
+        int/float: O resultado da soma de a + b
 
+    Examples:
+        >>> soma(5, 3)
+        8
+        >>> soma(-1, 1)
+        0
+        >>> soma(2.5, 3.7)
+        6.2
+    
     Raises:
-        ValueError: Se o denominador for zero.
+        TypeError: Se os argumentos não forem números
     """
-    if num2 == 0:
-        raise ValueError("Erro: Divisão por zero não é permitida.")
-    return num1 / num2
+    return a + b
+
+# calculadora.py
+
+# ... (mantenha a função soma e outras funções existentes) ...
+
+def subtracao(a, b):
+    """
+    Realiza a subtração de dois números.
+
+    Args:
+        a (int/float): O minuendo (número do qual se subtrai)
+        b (int/float): O subtraendo (número a ser subtraído)
+
+    Returns:
+        int/float: O resultado da subtração de a - b
+
+    Examples:
+        >>> subtracao(5, 3)
+        2
+        >>> subtracao(-1, 1)
+        -2
+        >>> subtracao(10.5, 3.2)
+        7.3
+    
+    Raises:
+        TypeError: Se os argumentos não forem números
+    """
+    return a - b
+
+def multiplicacao(a, b):
+    """
+    Retorna o produto de dois números.
+
+    Esta função realiza a multiplicação de dois números fornecidos
+    como argumentos e retorna o resultado.
+
+    Parâmetros:
+    a (int ou float): O primeiro número a ser multiplicado.
+    b (int ou float): O segundo número a ser multiplicado.
+
+    Retorna:
+    int ou float: O produto de a e b.
+
+    Exemplo:
+    >>> multiplicacao(3, 4)
+    12
+    >>> multiplicacao(2.5, 2)
+    5.0
+    """
+    return a * b
+
+def divisao(a, b):
+    """
+    Retorna o resultado da divisão de dois números.
+
+    Esta função realiza a divisão do primeiro número pelo segundo,
+    incluindo tratamento para divisão por zero.
+
+    Parâmetros:
+    a (int ou float): Numerador - número a ser dividido.
+    b (int ou float): Denominador - número pelo qual será dividido.
+
+    Retorna:
+    float: O resultado da divisão de a por b.
+    str: Mensagem de erro caso ocorra divisão por zero.
+
+    Exceções:
+    - Retorna mensagem de erro se o denominador for zero.
+
+    Exemplos:
+    >>> divisao(10, 2)
+    5.0
+    >>> divisao(7, 2)
+    3.5
+    >>> divisao(5, 0)
+    'Erro: Divisão por zero não é permitida'
+    """
+    try:
+        if b == 0:
+            raise ZeroDivisionError
+        return a / b
+    except ZeroDivisionError:
+        return "Erro: Divisão por zero não é permitida"
+
+
+# Exemplo de uso da função
+if __name__ == "__main__":
+    # Testando a função
+    resultado_soma = soma(5, 3)
+    print(f"A soma de 5 e 3 é: {resultado_soma}")
+
+    resultado_subtracao = subtracao(10, 4)
+    print(f"A subtração de 10 e 4 é: {resultado_subtracao}")
+
+    # Exemplo com números inteiros
+    num1 = 5
+    num2 = 3
+    resultado1 = multiplicacao(num1, num2)
+    print(f"A multiplicação de {num1} x {num2} = {resultado1}")
+
+    # Exemplo com números decimais
+    num3 = 2.5
+    num4 = 4.0
+    resultado2 = multiplicacao(num3, num4)
+    print(f"A multiplicação de {num3} x {num4} = {resultado2}")
+
+    # Exemplo 1: Divisão com números inteiros
+    num1 = 10
+    num2 = 2
+    resultado1 = divisao(num1, num2)
+    print(f"A divisão de {num1} ÷ {num2} = {resultado1}")
+
+    # Exemplo 2: Divisão com número decimal
+    num3 = 7.5
+    num4 = 2.5
+    resultado2 = divisao(num3, num4)
+    print(f"A divisão de {num3} ÷ {num4} = {resultado2}")
+
+    # Exemplo 3: Tentativa de divisão por zero
+    num5 = 5
+    num6 = 0
+    resultado3 = divisao(num5, num6)
+    print(f"A divisão de {num5} ÷ {num6} = {resultado3}")
+
+
+
+
