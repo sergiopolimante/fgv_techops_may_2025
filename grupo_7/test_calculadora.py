@@ -10,3 +10,8 @@ def test_subtracao():
     assert subtracao(5, 3) == 2
     assert subtracao(0, 4) == -4
     assert subtracao(-3, -2) == -1
+
+def test_multiplicacao():
+assert multiplicacao(2, 3) == 6
+assert multiplicacao(-1, 5) == -5
+assert multiplicacao(0, 99) == 0
