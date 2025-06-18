@@ -96,3 +96,22 @@ if __name__ == "__main__":\
   # Multiplica\'e7\'e3o com zero\
   resultado4 = multiplicar(10, 0)\
   print(f"10 * 0 = \{resultado4\}") # Sa\'edda: 10 * 0 = 0}
+  
+  #inserção do código divisão:\
+  def divisao(num1, num2):
+    """
+    Realiza a divisão de dois números.
+
+    Args:
+        num1 (float ou int): O numerador.
+        num2 (float ou int): O denominador.
+
+    Returns:
+        float: O resultado da divisão.
+
+    Raises:
+        ValueError: Se o denominador for zero.
+    """
+    if num2 == 0:
+        raise ValueError("Erro: Divisão por zero não é permitida.")
+    return num1 / num2
