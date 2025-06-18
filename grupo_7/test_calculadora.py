@@ -15,3 +15,10 @@ def test_multiplicacao():
 assert multiplicacao(2, 3) == 6
 assert multiplicacao(-1, 5) == -5
 assert multiplicacao(0, 99) == 0
+
+def test_divisao():
+assert divisao(10, 2) == 5
+assert divisao(-9, 3) == -3
+def test_divisao_por_zero():
+with pytest.raises(ValueError):
+divisao(10, 0)
