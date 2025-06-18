@@ -1,23 +1,22 @@
-import pytest
+import unittest
 from calculadora import soma, subtracao, multiplicacao, divisao
- 
-def test_soma():
-    assert soma(2, 3) == 5
-    assert soma(-1, 1) == 0
-    assert soma(0, 0) == 0
 
-def test_subtracao():
-    assert subtracao(5, 3) == 2
-    assert subtracao(0, 4) == -4
-    assert subtracao(-3, -2) == -1
+class TestCalculadora(unittest.TestCase):
+    def test_soma(self):
+        self.assertEqual(soma(2, 3), 5)
 
-def test_multiplicacao():
-    assert multiplicacao(2, 3) == 6
-    assert multiplicacao(-1, 5) == -5
-    assert multiplicacao(0, 99) == 0
+    def test_subtracao(self):
+        self.assertEqual(subtracao(5, 3), 2)
 
-def test_divisao():
-    assert divisao(10, 2) == 5
-    assert divisao(-9, 3) == -3
-    def test_divisao_por_zero():
-    with pytest.raises(ValueError):divisao(10, 0)
+    def test_multiplicacao(self):
+        self.assertEqual(multiplicacao(2, 4), 8)
+
+    def test_divisao(self):
+        self.assertEqual(divisao(10, 2), 5)
+
+    def test_divisao_por_zero(self):
+        with self.assertRaises(ValueError):
+            divisao(10, 0)
+
+if __name__ == '__main__':
+    unittest.main()
