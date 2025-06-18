@@ -38,7 +38,7 @@ Todas as funções aceitam apenas números (`int` ou `float`). Entradas inválid
 ### ▶️ Clonar o repositório
 
 ```bash
-git clone https://github.com/usuario/projeto-calculadora.git
+git clone https://github.com/sergiopolimante/fgv_techops_may_2025.git
 cd projeto-calculadora
 ```
 
