@@ -1,1 +1,0 @@
-# fgv_techops_may_2025
